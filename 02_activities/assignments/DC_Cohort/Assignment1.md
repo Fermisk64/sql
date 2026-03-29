@@ -106,6 +106,8 @@ Please do not pick the exact same tables that I have already diagrammed. For exa
 	- <img src="./images/01_farmers_market_conceptual_model.png" width="600">
 - The column names can be found in a few spots (DB Schema window in the bottom right, the Database Structure tab in the main window by expanding each table entry, at the top of the Browse Data tab in the main window)
 
+
+
 ***
 
 ## Section 2:
@@ -209,5 +211,12 @@ Consider, for example, concepts of fariness, inequality, social structures, marg
 
 
 ```
-Your thoughts...
+Digital systems I use every day make assumptions about what a “normal” life looks like, and those assumptions show up in the moments when the system doesn’t recognize the information entered that doesn't fall within the defined values. Many platforms treat identity as something fixed and called "normal" such as a well-defined and recognized legal names, binary gender, and stable address. That works for people whose lives follow that pattern, but it creates friction for anyone with a fluid identity, a recent name change, or unstable housing. especially considering immigration which introduces new names, culture norms, unstable economic situation that results in "normal people" ending up within poverty line and homeless, etc. The value underneath is that institutions prioritize clean, consistent data over the complexity of real people.
+Family structure is another place where these values surface. Healthcare portals, insurance forms, and school systems often assume a nuclear, heterosexual, biological family by default. They ask for “mother” and “father,” or they limit the number of caregivers you can list. Families that are queer, blended, adoptive, or built around chosen relationships often have to bend themselves to fit the form, revealing how narrow the original design really was.
+Risk management is also deeply embedded in everyday systems. Credit scores reward traditional financial behavior and penalize anything that looks irregular. Payment platforms freeze accounts when spending patterns deviate from what they consider normal. Airport security treats certain nationalities or travel histories as inherently suspicious, and as a result, imposing discrimination. These systems are built around protecting institutions first, even when that means treating individuals unfairly.
+Traceability has become a default expectation across digital life. Phones track location, loyalty programs track purchases, and apps build behavioral profiles from everyday interactions. The assumption is that constant visibility is normal and that convenience outweighs privacy. Consent is often bundled or unavoidable, reflecting a value system that treats data collection as routine. 
+Efficiency is another value that shapes how databases work. To function, they need clean categories and predictable relationships, which means complex identities get squeezed into rigid fields for gender, race, ethnicity, or household structure. When someone doesn’t fit, the system either forces them into an inaccurate category or denies access altogether. The structure of the database itself becomes a gatekeeper.
+Across all these examples, the same themes repeat: normativity, legibility, stability, traceability, and efficiency. These values determine who moves through digital systems smoothly and who gets flagged as an exception. It’s striking how often the friction points in daily life reveal the assumptions built into the systems behind them.
+
+
 ```

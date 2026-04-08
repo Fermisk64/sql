@@ -56,7 +56,11 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
 ```
-Your answer...
+Type 1 SCD: 
+This is a more si,ple method in which for each customer, there is only one entry for the address. As the customer addresses changes, we simply over-write the previous record with the new address. The pros of this method is that it is effcient, no extra storage is required. However, the cons are we cannot keep record of the changes as the previous address is deleted. This is certainly type 1 as it only keeps one address per customer.
+
+Type 2 SCD:
+In this case, we start with one address entry per customer. As the customer moves and changes address, a new entry is added per address change. we can add a column indicating which address is the customer's current address. The pros of this method is that it keeps record of all of the customer addresses. If for whatever reason, we need to track the customer's previous address, we can simply look it up in the table by followin the dates. The cons of this method however is that it requires storage per customer. As the entries per customer increase, so does the volume of the storage. This is type 2 SCD as it requires recording new entries while maintaining previous ones.
 ```
 
 ***
@@ -191,5 +195,10 @@ Consider, for example, concepts of labour, bias, LLM proliferation, moderating c
 
 
 ```
-Your thoughts...
+There are several ethical issues tied to the development and use of AI. Although we often talk about artificial intelligence as if it were powered entirely by machines, the reality is that it relies heavily on human labour. As the article points out, nearly every stage of building an AI system, from gathering data to preparing it for training, depends on extensive, often invisible human work. This hidden reliance raises important questions about how AI is created, who benefits from it, and who ultimately bears the burden of making these systems function.
+One major ethical concern that I derive after reading this article, also hinted upon, is the invisibility and exploitation of the human labour behind AI. Despite being marketed as automated and intelligent, AI systems depend on large numbers of low paid workers who label data, moderate content, classify images, and clean datasets. Many of these workers are contractors or those living in economically disadvantaged regions. They perform repetitive and mentally demanding tasks for very little pay, and their contributions are rarely acknowledged. This creates a clear moral imbalance: while tech companies get credit and reap the financial rewards of AI, the people who make the technology possible remain underpaid and unseen and have no claim in advancing the field and improving neural nets.
+Another issue is the idea of machine autonomy, which hides the human judgment embedded in AI systems. Neural networks learn from examples created by people, meaning their behaviour reflects the biases, assumptions, and limitations of the humans who curate and annotate the data. When companies present AI as objective or self sufficient, they avoid taking responsibility for errors, discrimination, or harmful outcomes. This narrative makes it easy to blame “the algorithm” instead of acknowledging the human decisions behind it.
+Another issue concerns the global inequality within the AI supply chain. Much of the work that supports machine learning is outsourced to places or countries where workers have fewer protections and lower wages and exactly for this reason. This dynamic echoes long standing patterns of economic exploitation and raises questions about fairness and the ethics of building advanced technologies on precarious labour.
+Finally, the lack of transparency surrounding AI development is another issue. By hiding the human labour involved, companies create unrealistic expectations about what AI can do and hide the true social and economic costs of these systems. This lack of openness makes it harder for the public to scrutinize issues like bias, exploitation, and accountability.
+
 ```
